@@ -2,6 +2,15 @@
   <section class="about-us">
     <div class="container">
       <div class="about-us__inner">
+        <div class="about-us__mobile">
+          <p class="title">О нас</p>
+          <p class="description">
+            Investport - ведущая компания по инвестициям в недвижимость в
+            Турции. Мы предлагаем комплексные консультационные услуги ведущим
+            семейным бизнесам, банкам, инвестиционным компаниям и отдельным
+            клиентам по всему миру.
+          </p>
+        </div>
         <div class="about-us__content">
           <p class="title">О нас</p>
           <p class="description">

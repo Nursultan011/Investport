@@ -301,6 +301,9 @@
       width: 100%;
     }
   }
+  &__mobile{
+    display: none;
+  }
   &__content{
     max-width: calc(50% - 16px);
     .title{
@@ -469,6 +472,119 @@
   }
 }
 
+@media (min-width: 681px) and (max-width: 992px){
+  .filters{
+    &__wrap{
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .text-field{
+        margin-right: 0;
+      }
+    }
+    &__advanced{
+      justify-content: space-between;
+    }
+    .text-field{
+      width: calc(50% - 8px);
+      margin-bottom: 16px;
+      margin-right: 0;
+      .status{
+        span{
+          padding-left: 8px;
+          padding-right: 8px;
+          &:last-child{
+            flex: none;
+            width: max-content;
+          }
+        }
+      }
+    }
+    .text-field-4{
+      width: 100%;
+    }
+  }
+
+  .cards{
+    justify-content: space-between;
+    margin-bottom: -24px;
+    .card{
+      max-width: calc(50% - 12px);
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  .about-us{
+    margin-top: 80px;
+    margin-bottom: 88px;
+    &__mobile{
+      display: block;
+      width: 100%;
+      .title{
+        text-align: left;
+        font-size: 28px;
+        line-height: normal;
+      }
+      .description{
+        max-width: 596px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__inner{
+      flex-wrap: wrap;
+      &>img{
+        max-width: calc(100% - (288px + 16px));
+        padding: 20px;
+      }
+    }
+    &__content{
+      width: 100%;
+      max-width: 288px;
+      .title, .description{
+        display: none;
+      }
+      .items{
+        flex-wrap: wrap;
+        .item{
+          width: 100%;
+          & + .item{
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .request{
+    &__inner{
+      padding: 24px;
+      .title{
+        font-size: 28px;
+        line-height: 32px;
+      }
+      form{
+        max-width: 386px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        width: 100%;
+        .text-field{
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+        .checkbox{
+          align-items: flex-start;
+        }
+        .button{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 680px){
   .main{
     &__inner{
@@ -522,11 +638,24 @@
         padding: 0;
       }
     }
-    &__content{
-      max-width: 100%;
+    &__mobile{
+      display: block;
+      width: 100%;
       .title{
+        text-align: left;
         font-size: 22px;
         line-height: normal;
+      }
+      .description{
+        max-width: 596px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__content{
+      max-width: 100%;
+      .title, .description{
+        display: none;
       }
       .items{
         flex-wrap: wrap;
